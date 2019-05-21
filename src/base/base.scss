@@ -1,0 +1,36 @@
+@import './settings';
+@import './colors';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 24px;
+    overflow-x: hidden;
+    background-color: $color-gray-light;
+}
+
+input {
+    border: 1px solid $border-color;
+    border-radius: $size-5;
+    padding: 12px 125px;
+    margin-bottom: 31px;
+
+    &::placeholder {
+        color: $color-brown;
+        font-size: $size-20;
+        text-align: center;
+    }
+}

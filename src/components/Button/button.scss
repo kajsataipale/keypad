@@ -1,0 +1,62 @@
+@import '../../base/base';
+
+.button {
+    background-color: $color-gray;
+    padding: 4px 38px;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    min-width: 90px;
+    min-height: 43px;
+    margin-top: $size-5;
+    margin-left: $size-5;
+    outline: none;
+    pointer-events: none;
+
+    &--wide {
+        padding: 8px 49px;
+    }
+
+    &--extra-wide {
+        padding: 8px 88px;
+        margin-right: $size-14;
+    }
+
+    &--with-label {
+        background-color: $color-white;
+        pointer-events: all;
+
+        &:hover,
+        &:focus {
+            background-color:lighten(#009681, 10%);
+        }
+    }
+
+    &--pink {
+
+        background-color:lighten($color-pink, 10%);
+        color: $color-white;
+        pointer-events: all;
+    
+        &:hover,
+        &:focus {
+            background-color: $color-pink;
+        }
+    }
+
+    &--green {
+        background-color:lighten($color-green, 10%);
+        color: $color-white;
+        pointer-events: all;
+
+        &:hover,
+        &:focus {
+            background-color: $color-green;
+        }
+    }
+}
+
+.button__label {
+    font-size: $size-16;
+    pointer-events: none
+}
